@@ -4,15 +4,20 @@ A Dockerized template repo that lets anyone train and test an ML model with zero
 ```yaml
 
 ml-in-a-box/
-├── docker/
-│   └── Dockerfile
-├── notebooks/
-│   └── 00_Intro.ipynb
-├── requirements.txt
-├── .devcontainer/          # Optional for VSCode users
-│   └── devcontainer.json
-├── README.md
+├── data/                 # placeholder with README on where data goes
+├── notebooks/            # exploratory work
+│   └── example.ipynb     # demo notebook
+├── src/                  # actual code
+│   ├── data_cleaning.py  # preprocessing pipeline
+│   ├── train.py          # training script
+│   ├── evaluate.py       # metrics & plots
+│   └── utils.py          # helper functions
+├── tests/                # unit tests for src
+├── requirements.txt      
+├── setup.py              # so it can be installed locally as a package
+├── README.md             # polished, with gifs & quickstart
 └── .gitignore
+
 
 ```
 ---
